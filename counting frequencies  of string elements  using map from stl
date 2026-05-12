@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+  string s;
+  cin>>s;
+  //pre-compute
+  map<char,int> hash;
+  for(auto i : s)
+    hash[i]+=1;
+  int q;
+  cin>>q;
+  while(q--){
+    char ch;
+    cin>>ch;
+    cout << hash[ch] << endl;
+  }
+  return 0;
+}
